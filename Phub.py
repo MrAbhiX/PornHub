@@ -22,8 +22,11 @@ else:
     raise Exception("Your Config File Is Invalid or Maybe Doesn't Exist! Please Check Your Config File or Try Again.")
 
 # ARQ API and Bot Initialize---------------------------------------------------
-session = ClientSession()
-arq = ARQ("https://thearq.tech", ARQ_API_KEY, session)
+async def main():
+    global arq
+    session = ClientSession()
+    arq = ARQ(ARQ_API_BASE_URL, ARQ_API_KEY, session)
+    
 pornhub = arq.pornhub
 phdl = arq.phdl
 
