@@ -26,9 +26,9 @@ async def main():
     global arq
     session = ClientSession()
     arq = ARQ(ARQ_API_BASE_URL, ARQ_API_KEY, session)
-    
-pornhub = arq.pornhub
-phdl = arq.phdl
+    pornhub = arq.pornhub
+    phdl = arq.phdl
+
 
 app = Client("Tg_PHub_Bot", bot_token=Bot_token, api_id=6,
              api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
